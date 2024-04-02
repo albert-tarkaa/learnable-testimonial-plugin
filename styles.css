@@ -1,0 +1,95 @@
+.testi-container {
+    display: flex;
+    border: 1px solid #E8E8E8;
+    border-radius: 16px;
+    padding: 32px 42px;
+    margin-bottom: 24px;
+    flex-wrap: wrap; /* Added to allow wrapping on smaller screens */
+}
+
+.testi-content-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1;
+    display: flex;
+}
+
+.testi-image-container {
+    width: 220.57px;
+    height: 258.13px;
+    position: relative;
+}
+
+.testi-image-container img {
+    width: 200.86px;
+    height: 234.50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5.43px;
+    overflow: hidden;
+}
+
+.testi-title {
+    width: 100%; /* Added to make the title responsive */
+    color: #25282B;
+    font-size: 20px;
+    font-family: General Sans;
+    font-weight: 500;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.testi-description {
+    width: 100%; /* Added to make the description responsive */
+    color: #25282B;
+    font-size: 16px;
+    font-family: General Sans;
+    font-weight: 400;
+    line-height: 25.92px;
+    word-wrap: break-word;
+}
+
+.testi-author {
+    width: 100%; /* Added to make the author responsive */
+    color: #25282B;
+    font-size: 16px;
+    font-family: General Sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.testi-designation {
+    width: 100%; /* Added to make the designation responsive */
+    color: #25282B;
+    font-size: 16px;
+    font-family: General Sans;
+    font-weight: 400;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .testi-container {
+        flex-direction: column; /* Change to column layout on smaller screens */
+        align-items: center; /* Center align the content */
+        padding: 16px; /* Reduce padding */
+    }
+
+    .testi-content-container {
+        align-items: center; /* Center align the content */
+    }
+
+    .testi-image-container {
+        margin-bottom: 16px; /* Add some spacing between image and content */
+    }
+}
